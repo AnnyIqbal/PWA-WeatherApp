@@ -1,6 +1,6 @@
 {
-  "name": "Weather",
-  "short_name": "Weather",
+  "name": "2048 Puzzle Game",
+  "short_name": "2048",
   "icons": [{
     "src": "images/icons/icon-128x128.png",
       "sizes": "128x128",

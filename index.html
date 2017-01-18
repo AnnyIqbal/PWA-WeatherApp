@@ -21,7 +21,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="canonical" href="https://weather-pwa-sample.firebaseapp.com/final/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather PWA</title>
+  <title>2048</title>
   <link rel="stylesheet" type="text/css" href="styles/inline.css">
 
   <!-- TODO add manifest here -->
@@ -32,13 +32,34 @@
 <body>
 
   <header class="header">
-    <h1 class="header__title">Weather PWA</h1>
-    <button id="butRefresh" class="headerButton" aria-label="Refresh"></button>
-    <button id="butAdd" class="headerButton" aria-label="Add"></button>
+    <h1 class="header__title">2048</h1>
+    <h3 class="header__title"> Join the numbers and get to the 2048 tile! </h3>
+    <button id="butNewGame" class="headerButton" aria-label="New Game">New Game</button>
+    <h3 class="header__title"> Score: 60 </h3> 
   </header>
 
   <main class="main">
-    <div class="card cardTemplate weather-forecast" hidden>
+    <div class="card cardTemplate weather-forecast">
+      Hello World
+      <table class='border'>
+        <tr id="r1">
+          <td id="c1" class='border'></td>
+          <td id="c2" class='border'></td>
+          <td id="c3" class='border'></td>
+        </tr>
+        <tr id="r2">
+          <td id="c4" class='border'></td>
+          <td id="c5" class='border'></td>
+          <td id="c6" class='border'></td>
+        </tr>
+        <tr id="r3">
+          <td id="c7" class='border'></td>
+          <td id="c8" class='border'></td>
+          <td id="c9" class='border'></td>
+        </tr>
+      </table>
+    </div>
+    <!--<div class="card cardTemplate weather-forecast" hidden>
       <div class="city-key" hidden></div>
       <div class="card-last-updated" hidden></div>
       <div class="location"></div>
@@ -134,17 +155,17 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
   </main>
-
+<!--
   <div class="dialog-container">
     <div class="dialog">
       <div class="dialog-title">Add new city</div>
-      <div class="dialog-body">
-        <select id="selectCityToAdd">
+      <div class="dialog-body"> 
+        <select id="selectCityToAdd"> -->
           <!-- Values map to Yahoo Weather API Where On Earth Identifiers (WOEIDs).
                https://developer.yahoo.com/weather/documentation.html#req -->
-          <option value="2357536">Austin, TX</option>
+      <!--    <option value="2357536">Austin, TX</option>
           <option value="2367105">Boston, MA</option>
           <option value="2379574">Chicago, IL</option>
           <option value="2459115">New York, NY</option>
@@ -165,9 +186,9 @@
       <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
     </svg>
   </div>
-
+-->
   <!-- Uncomment the line below when ready to test with fake data -->
-  <script src="scripts/app.js" async></script>
+  <script src="scripts/pzl.js" async></script>
 
 </body>
 </html>
